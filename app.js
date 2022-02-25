@@ -36,5 +36,5 @@ client.events = new discord.Collection();
 
 //---------------------------------------------------------------------------
 //------------------------------TOKEN----------------------------------------
-client.login(process.env.DSTOKEN);
+client.login("OTQ1MDE0NTgyNzAxODUwNjQ0.YhJ_ag.s_SDKfCL6PKSGis9TDAPLd7kmhU");
 //---------------------------------------------------------------------------
