@@ -7,7 +7,7 @@ module.exports = {
     //% BUTTONS
     const btn1 = new discord.MessageButton()
       .setCustomId("verify")
-      .setLabel("<a:chec1:945073442808557699> Verificarme")
+      .setLabel("✅ Verificarme")
       .setStyle("SUCCESS");
     //% BUTTONS
 
@@ -20,7 +20,7 @@ module.exports = {
     //# MENSAJES
 
     const msgE = {
-      title: "Verificacion",
+      title: "<a:emoji_7:809833434766639134> | Verificacion",
       description: "Dale click al boton para que puedas ver nuestros canales y formes parte de nuestra hermosa comunidad",
       color: 3066993,
       footer: {
