@@ -23,7 +23,7 @@ module.exports = {
         name: "EnCubos Netwowk",
         icon_url: "https://media.discordapp.net/attachments/945744137444016211/945747416563470366/EnCubos.PNG",
       },
-      timestamp: new date(),
+      timestamp: new Date(),
       footer: {
         name: "Discord & Minecraft"
       },
