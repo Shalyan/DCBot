@@ -2,7 +2,7 @@ module.exports = (client, discord, interaction) => {
   //--------------------------
 
   if (interaction.isButton()) {
-    interaction.followUp({ content: 'string', ephemeral: true })
+    interaction.reply({ content: 'string', ephemeral: true })
     
     const member = interaction.member;
 
