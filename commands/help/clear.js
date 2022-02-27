@@ -1,5 +1,6 @@
 module.exports = {
     name: "clear",
+    permissions: ["ADMINISTRATOR"],
     aliases: ["del", "borrar", "limpiar"],
     description: "Borra una cierta cantidad de mensajes",
     async execute(client, message, args, discord) {
