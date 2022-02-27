@@ -18,7 +18,7 @@ let embedavatar = new Discord.MessageEmbed()
 
 if (message.channel.id = "947570709050298378") return message.reply({ embeds: [embedavatar] })
 
-if (message.chanel.id != "947570709050298378") return message.reply("Dirigete al canal de comandos para usar este comando")
+if (!message.chanel.id = "947570709050298378") return message.reply("Dirigete al canal de comandos para usar este comando")
  }
 
 }
