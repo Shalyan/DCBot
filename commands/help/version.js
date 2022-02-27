@@ -7,7 +7,7 @@ module.exports = {
     //# MENSAJES
     const msgA = {
       title: "Version del bot",
-      description: "EnCubot 0.0.7",
+      description: "EnCubot 0.0.8",
       color: 10181046,
       footer: {
         text: "EnCubos Network | Discord & Minecraft",
