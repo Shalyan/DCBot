@@ -2,7 +2,7 @@ module.exports = (client, discord, interaction) => {
   //--------------------------
 
   if (interaction.isButton()) {
-    interaction.reply({ content: 'string', ephemeral: true })
+    interaction.reply({ content: 'Te has verificado correctamente!', ephemeral: true })
     
     const member = interaction.member;
 
