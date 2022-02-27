@@ -7,7 +7,8 @@ module.exports = {
     //% BUTTONS
     const btn1 = new discord.MessageButton()
       .setCustomId("verify")
-      .setLabel("✅ Verificarme")
+      .setLabel("Verificarme")
+      .setEmoji("<a:chec1:945073442808557699>")
       .setStyle("SUCCESS");
     //% BUTTONS
 
