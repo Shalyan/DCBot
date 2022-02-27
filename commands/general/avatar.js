@@ -2,9 +2,9 @@ const Discord = require('discord.js')
 
 module.exports = {
   name: "avatar"
-  aliases: [],
+  aliases: ["foto"],
   
-execute (client, message, args){
+async execute (client, message, args){
 
 let usuairo = message.mentions.members.first() || message.member;
 
