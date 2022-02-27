@@ -3,14 +3,18 @@ module.exports = (client, discord, interaction) => {
 
   if (interaction.isButton()) {
     interaction.deferReply({ ephemeral: true });
-    interaction.followUp({ content: "Verificado correctamente!" });
+    interaction.followUp({ content: "Hola" });
 
     const member = interaction.member;
 
-    if (interaction.customId === "verify") {
+    if (interaction.customId === "acp") {
       let rol = "813606660559470593";
       member.roles.add(rol);
       return console.log("Acepto");
+    }
+    if (interaction.customId === "deg") {
+      member.kick();
+      return console.log("No Acepto");
     }
   }
 
