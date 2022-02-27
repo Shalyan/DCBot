@@ -4,6 +4,8 @@ module.exports = {
   permissions: ["ADMINISTRATOR"],
   description: "Para ver la version del bot",
   async execute(client, message, args, discord) {
+    // Permisos
+    if(!message.member.permissions.has("ADMINISTRATOR")) return message.channel.send(":equis: **| No tienes suficientes permisos!**")
     //# MENSAJES
     const msgA = {
       title: "Version del bot",
