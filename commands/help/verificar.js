@@ -4,6 +4,9 @@ module.exports = {
   permissions: ["ADMINISTRATOR"],
   description: "Para verificarse",
   async execute(client, message, args, discord) {
+     // Permisos
+    if(!message.member.permissions.has("ADMINISTRATOR")) return message.reply("Te faltan permisos para ejecutar este comando")
+    // Permisos
     //% BUTTONS
     const btn1 = new discord.MessageButton()
       .setCustomId("acp")
