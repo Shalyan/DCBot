@@ -1,8 +1,7 @@
-const Discord = require('discord.js')
-
 module.exports = {
   name: "avatar",
-  aliases: ["foto"],
+  aliases: [],
+  description: "Muestra la foto de perfil de un usuario",
   
 async execute (client, message, args){
 
