@@ -7,7 +7,7 @@ module.exports = {
     //% BUTTONS
     const btn1 = new discord.MessageButton()
       .setCustomId("verify")
-      .setLabel("Verificarme")
+      .setLabel("<a:chec1:945073442808557699> Verificarme")
       .setStyle("SUCCESS");
     //% BUTTONS
 
@@ -19,11 +19,11 @@ module.exports = {
 
     //# MENSAJES
 
-    const msgE = {
-      title: "Verificacion | <a:emoji_7:809833434766639134>",
-      description: "Dale click al boton para que puedas ver nuestros canales y formes parte de nuestra hermosa comunidad",
-      color: 3066993,
-    };
+const msgE = new MessageEmbed()
+	.setColor('#2ECC71')
+	.setTitle('<a:emoji_7:809833434766639134> | Verificacion')
+	.setDescription('Dale click al boton para que puedas ver nuestros canales y formes parte de nuestra hermosa comunidad')
+	.setFooter({ text: 'EnCubos Network | Discord & Minecraft', iconURL: 'https://media.discordapp.net/attachments/945744137444016211/945747416563470366/EnCubos.PNG' });
 
     //# MENSAJES
 
