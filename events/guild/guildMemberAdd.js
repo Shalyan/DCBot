@@ -1,4 +1,19 @@
 module.exports = async (client, discord, member) => {
+  //& REGISTRAR USUARIO
+
+  try {
+    let user = await userModel.create({
+      userID: member.id,
+      userName: member.displayName,
+      serverID: member.guild.id,
+    });
+    user.save();
+  } catch (error) {
+    console.log(error);
+  }
+
+  //& REGISTRAR USUARIO
+    
     const channel = member.guild.channels.cache.find(
       (channel) => channel.id === "847656812517392485"
     );
