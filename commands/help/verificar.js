@@ -23,7 +23,6 @@ module.exports = {
       title: "Verificacion | <a:emoji_7:809833434766639134>",
       description: "Dale click al boton para que puedas ver nuestros canales y formes parte de nuestra hermosa comunidad",
       color: 3066993,
-      },
     };
 
     //# MENSAJES
