@@ -24,6 +24,7 @@ module.exports = {
       timestamp: new Date(),
       footer: {
         text: "Discord & Minecraft"
+	icon_url: "https://cdn-icons-png.flaticon.com/512/74/74717.png"
       },
     };
 
