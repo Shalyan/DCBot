@@ -10,7 +10,7 @@ let usuairo = message.mentions.members.first() || message.member;
 
 let embedavatar = new Discord.MessageEmbed()
 
-.setTitle(`Avatar de **${usuario.user.username}**`)
+.setTitle(`Foto de **${usuario.user.username}**`)
 .setImage(usuario.user.displayAvatarURL({ size: 1024, dynamic: true }))
 .setFooter(`Ped.displayNaido por ${message.memberme}`)
 .setTimestamp()
