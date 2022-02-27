@@ -6,7 +6,7 @@ module.exports = {
   
 async execute (client, message, args){
 
-let usuairo = message.mentions.members.first() || message.member;
+let usuario = message.mentions.members.first() || message.member;
 
 let embedavatar = new Discord.MessageEmbed()
 
