@@ -2,9 +2,8 @@ module.exports = (client, discord, interaction) => {
   //--------------------------
 
   if (interaction.isButton()) {
-    interaction.deferReply({ ephemeral: true });
-    interaction.followUp({ content: "Te has verificado correctamente!" });
-
+    interaction.followUp({ content: 'string', ephemeral: true })
+    
     const member = interaction.member;
 
     if (interaction.customId === "acp") {
