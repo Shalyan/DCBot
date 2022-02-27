@@ -18,6 +18,6 @@ module.exports = {
     };
 
 
-    message.channel.send({ embeds: [msgA] });
+    message.reply({ embeds: [msgA] });
   },
 };
