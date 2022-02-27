@@ -6,7 +6,6 @@ module.exports = {
     // Permisos
     if(!message.member.permissions.has("ADMINISTRATOR")) return message.reply("Te faltan permisos para ejecutar este comando")
     //# MENSAJES
-    
     const msgR = {
       title: "Reglas",
       description: "```Favor de leer todas nuestras reglas para evitar ser sancionado y pasarla bien en nuestra comunidad.```",
@@ -24,7 +23,6 @@ module.exports = {
       timestamp: new Date(),
       footer: {
         text: "Discord & Minecraft"
-	icon_url: "https://cdn-icons-png.flaticon.com/512/74/74717.png"
       },
     };
 
