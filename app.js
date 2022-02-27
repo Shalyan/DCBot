@@ -7,21 +7,21 @@ const client = new discord.Client({
 
 // MONGO
 
-const mongoose = require("mongoose");
-const mg = process.env.DB;
+//const mongoose = require("mongoose");
+//const mg = process.env.DB;
 
-mongoose
-  .connect(mg, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log("Conectado a MongoDB");
-    console.log("--------------------- LOGS DEL BOT ---------------------");
-  })
-  .catch((e) => {
-    console.log(e);
-  });
+//mongoose
+  //.connect(mg, {
+    //useNewUrlParser: true,
+    //useUnifiedTopology: true,
+  //})
+  //.then(() => {
+    //console.log("Conectado a MongoDB");
+    //console.log("--------------------- LOGS DEL BOT ---------------------");
+  //})
+  //.catch((e) => {
+    //console.log(e);
+  //});
 
 //MONGO
 
