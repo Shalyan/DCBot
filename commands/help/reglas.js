@@ -7,11 +7,11 @@ module.exports = {
     
     const msgR = {
       title: "Reglas",
-      description: "*Favor de leer todas nuestras reglas para evitar sanciones y pasarla bien*",
+      description: "`Favor de leer todas nuestras reglas para evitar sanciones y pasarla bien`",
       color: 2067276,
       fields: [
           {	       
-	      name: '`No está permitido publicar contenido u enlaces que puedan considerarse como:`',
+	      name: 'No está permitido publicar contenido u enlaces que puedan considerarse como:',
 	      value: '- Insultos',
           },
       ],
