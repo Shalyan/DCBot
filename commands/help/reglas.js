@@ -11,12 +11,8 @@ module.exports = {
       color: 2067276,
       fields: [
           {	       
-	      name: 'No está permitido publicar contenido u enlaces que puedan considerarse como:',
-	      value: '- Insultos',
-              value: '- NSFW',
-              value: '- Politico',
-              value: '- Racista',
-              value: '- Religioso',
+	      name: '`No está permitido publicar contenido u enlaces que puedan considerarse como:`',
+	      value: '- Insultos', >> '- NSFW', >> '- Politico', >> '- Racista', >> '-Religioso',
           },
       ],
       author: {
@@ -25,7 +21,7 @@ module.exports = {
       },
       timestamp: new Date(),
       footer: {
-        name: "Discord & Minecraft"
+        text: "Discord & Minecraft"
       },
     };
 
