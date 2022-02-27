@@ -1,16 +1,16 @@
 module.exports = async (client, discord, member) => {
   //& REGISTRAR USUARIO
 
-  try {
-    let user = await userModel.create({
-      userID: member.id,
-      userName: member.displayName,
-      serverID: member.guild.id,
-    });
-    user.save();
-  } catch (error) {
-    console.log(error);
-  }
+  //try {
+    //let user = await userModel.create({
+      //userID: member.id,
+      //userName: member.displayName,
+      //serverID: member.guild.id,
+    //});
+    //user.save();
+  //} catch (error) {
+    //console.log(error);
+  //}
 
   //& REGISTRAR USUARIO
     
