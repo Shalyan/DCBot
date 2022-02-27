@@ -13,11 +13,12 @@ let embedavatar = new Discord.MessageEmbed()
 
 .setTitle(`Foto de **${usuario.user.username}**`)
 .setImage(usuario.user.displayAvatarURL({ size: 1024, dynamic: true }))
-.setFooter(`Ped.displayNaido por ${message.memberme}`)
+.setFooter(`Pedido por ${message.member}`)
 .setTimestamp()
 
-message.channel.send({ embeds: [embedavatar] })
+if (message.channel.id = "947570709050298378") return message.reply({ embeds: [embedavatar] })
 
+if (message.chanel.id != "947570709050298378") return message.reply("Dirigete al canal de comandos para usar este comando")
  }
 
 }
