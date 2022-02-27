@@ -6,7 +6,7 @@ module.exports = {
   async execute(client, message, args, discord) {
     //% BUTTONS
     const btn1 = new discord.MessageButton()
-      .setCustomId("verify")
+      .setCustomId("acp")
       .setLabel("Verificarme")
       .setEmoji("<a:chec1:945073442808557699>")
       .setStyle("SUCCESS");
