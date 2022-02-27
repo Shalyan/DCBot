@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 
 module.exports = {
   name: "avatar"
-  alias: [],
+  aliases: [],
   
 execute (client, message, args){
 
