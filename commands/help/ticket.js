@@ -34,6 +34,6 @@ module.exports = {
         };
 
 
-        message.channel.send({ embeds: [msgE], components: [fila] });
+        message.channel.send({ embeds: [msgB], components: [fila] });
     },
 };
