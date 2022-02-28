@@ -1,88 +1,39 @@
 module.exports = {
-  name: "ticket",
-  description: "Crea un ticket",
-  options: [
-    {
-      name: `razon`,
-      description: `Razon de tu ticket`,
-      type: "STRING",
-      required: true,
+    name: "ticket",
+    aliases: [""],
+    permissions: ["ADMINISTRATOR"],
+    description: "Para abrir ticket",
+    async execute(client, message, args, discord) {
+        // Permisos
+        if (!message.member.permissions.has("ADMINISTRATOR")) return message.reply("Te faltan permisos para ejecutar este comando")
+            // Permisos
+            //% BUTTONS
+        const btn1 = new discord.MessageButton()
+            .setCustomId("ticket")
+            .setLabel("Abrir")
+            .setEmoji("🎴")
+            .setStyle("SUCCESS");
+        //% BUTTONS
+
+        //& FILA
+
+        const fila = new discord.MessageActionRow().addComponents(btn1);
+
+        //& FILA
+
+        //# MENSAJES
+
+        const msgB = {
+            title: "🛃 | Soporte",
+            description: "Abre un ticket para que puedas hablar con nuestro equipo de soporte y asi aclarar alguna duda o ayudarte en algo.",
+            color: 3066993,
+            footer: {
+                text: "EnCubos Network | Discord & Minecraft",
+                icon_url: "https://media.discordapp.net/attachments/945744137444016211/945747416563470366/EnCubos.PNG",
+            },
+        };
+
+
+        message.channel.send({ embeds: [msgE], components: [fila] });
     },
-  ],
-  run: async (client, interaction) => {
-    //# Ticket Antigual
-    const tkA = interaction.guild.channels.cache.find(
-      (c) => c.topic == interaction.user.id
-    );
-
-    if (tkA) {
-      return interaction.reply({
-        content: " Ya existe un ticket con tu nombre",
-        ephemeral: true,
-      });
-    }
-
-    //# Categoria Antigua
-    let tkC = interaction.guild.channels.cache.find((c) => c.name == "TICKETS");
-
-    if (!tkC) {
-      await interaction.guild.channels
-        .create("TICKETS", {
-          type: 4,
-        })
-        .then((c) => {
-          tkC = c;
-        })
-        .catch(console.error);
-    }
-
-    //# Razon
-    const razon = interaction.options.getString("razon");
-
-    //% EMBED
-    const embed = {
-      author: { name: "Ticket" },
-      title: interaction.user.username,
-      description: `Has solicitado un ticket por la siguiente razon:\n ***${razon}***`,
-      color: 12390624,
-    };
-
-    //# Rol
-    const every = interaction.guild.roles.cache.find(
-      (r) => r.name == "@everyone"
-    );
-
-    //#Crear Ticket
-    await interaction.guild.channels
-      .create(interaction.user.username, {
-        //& Tipo de canal
-        type: 0,
-
-        //& El tema del canal
-        topic: interaction.user.id,
-
-        //& Parent
-        parent: tkC.id,
-
-        //& Permisos
-        permissionOverwrites: [
-          {
-            id: every.id,
-            deny: ["VIEW_CHANNEL", "SEND_MESSAGES", "READ_MESSAGE_HISTORY"],
-          },
-          {
-            id: interaction.user.id,
-            allow: ["VIEW_CHANNEL", "SEND_MESSAGES", "READ_MESSAGE_HISTORY"],
-          },
-        ],
-      })
-      .then((c) => {
-        c.send({ embeds: [embed] });
-        interaction.reply({
-          content: "Ticket creado correctamente",
-          ephemeral: true,
-        });
-      })
-      .catch(console.error);
-  },
 };
