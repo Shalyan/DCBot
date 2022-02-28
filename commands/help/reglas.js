@@ -13,7 +13,7 @@ module.exports = {
       fields: [
           {	       
 	      name: 'No está permitido publicar contenido u enlaces que puedan considerarse como:',
-	      value: '- Insultos\n\- NSFW\n\n- Politica\n\n- Racismo\n\n- Religion ',
+	      value: '- Insultos\n\- NSFW\n\- Politica\n\- Racismo\n\- Religion ',
           },
       ],
       author: {
