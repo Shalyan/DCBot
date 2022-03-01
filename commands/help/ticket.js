@@ -1,6 +1,6 @@
 module.exports = {
     name: "ticket",
-    aliases: [""],
+    aliases: [],
     permissions: ["ADMINISTRATOR"],
     description: "Para abrir ticket",
     async execute(client, message, args, discord) {
