@@ -17,8 +17,8 @@ module.exports = {
           },
       ],
       author: {
-        name: "EnCubos Netwowk",
-        icon_url: "https://media.discordapp.net/attachments/945744137444016211/945747416563470366/EnCubos.PNG",
+        name: "Tittle",
+        icon_url: "",
       },
       timestamp: new Date(),
       footer: {
