@@ -24,11 +24,11 @@ module.exports = async (client, discord, member) => {
         member.user.username /*Autor*/,
         member.user.displayAvatarURL() /* Icono*/
       )
-      .setDescription(`Bienvendio al servidor EnCubos, esperamos que la pases genial recuerda verificarte y leer las reglas`)
+      .setDescription(`Bienvendio al servidor , esperamos que la pases genial recuerda verificarte y leer las reglas`)
       .setThumbnail(
         member.user.displayAvatarURL()
       )
       .setTimestamp()
-      .setFooter("EnCubos", "https://media.discordapp.net/attachments/945744137444016211/945747416563470366/EnCubos.PNG");
+      .setFooter("", "");
     channel.send({ embeds: [me] });
   };
