@@ -28,7 +28,7 @@ module.exports = {
             description: "Dale click al boton para que puedas ver nuestros canales y formes parte de nuestra hermosa comunidad",
             color: 3066993,
             footer: {
-                text: "EnCubos Network | Discord & Minecraft",
+                text: "",
                 icon_url: "https://media.discordapp.net/attachments/945744137444016211/945747416563470366/EnCubos.PNG",
             },
         };
